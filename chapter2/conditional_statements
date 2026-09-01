@@ -1,1 +1,15 @@
+#include<stdio.h>
 
+int main(){
+    int a;
+    printf("Enter a number to cheak negative or positive :- ");
+    scanf("%d",&a);
+
+    if (a>=0)
+    {
+        printf("%d IS A POSITIVE NUMBER ",a);
+    }else{
+        printf("%d IS A NEGETIVE NUMBER ",a);
+    }
+    
+}
