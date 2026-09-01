@@ -1,9 +1,0 @@
-#include<stdio.h>
-
-int main(){
-    int a;
-    printf("Enter a Number ;- ");
-    scanf("%d",&a);
-    printf("The number %d if between 10 and 100 ans is 1 if not 0  %s  %d",a,"Ans:- ",a<100 && a>10);
-    return 0;
-}
