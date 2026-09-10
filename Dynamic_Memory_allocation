@@ -1,1 +1,23 @@
+int main() {
+    int *ptr;
 
+    ptr = (int*)malloc(3 * sizeof(int));
+
+    for(int i = 0; i < 3; i++) {
+        scanf("%d", &ptr[i]);
+    }
+
+    ptr = realloc(ptr, 5 * sizeof(int));
+
+    for(int i = 3; i < 5; i++) {
+        scanf("%d", &ptr[i]);
+    }
+
+    for(int i = 0; i < 5; i++) {
+        printf("%d ", ptr[i]);
+    }
+
+    free(ptr);
+
+    return 0;
+}
